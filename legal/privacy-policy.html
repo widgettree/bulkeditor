@@ -1,0 +1,827 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy - Bulk Image by WidgetTree</title>
+  <meta name="description" content="Privacy Policy for Bulk Image by WidgetTree. Learn how our local-first architecture protects your spreadsheets, designs, and media with zero cloud servers.">
+  <meta name="author" content="WidgetTree">
+  
+  <!-- Modern Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --font-heading: 'Outfit', -apple-system, BlinkMacSystemFont, sans-serif;
+      --font-body: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+      --font-mono: 'JetBrains Mono', monospace;
+
+      --primary: #EA6506;
+      --primary-hover: #D85600;
+      --primary-glow: rgba(234, 101, 6, 0.28);
+      --accent-coral: #FF6B3D;
+      --accent-emerald: #10B981;
+      --accent-blue: #3B82F6;
+
+      --bg-main: #0B0E14;
+      --bg-surface: #121824;
+      --bg-card: rgba(22, 30, 46, 0.75);
+      --bg-card-hover: rgba(30, 41, 59, 0.85);
+      --border-color: rgba(255, 255, 255, 0.08);
+      --border-glow: rgba(234, 101, 6, 0.35);
+      --text-main: #F8FAFC;
+      --text-muted: #94A3B8;
+      --text-subtle: #64748B;
+      --nav-bg: rgba(11, 14, 20, 0.88);
+      --badge-bg: rgba(234, 101, 6, 0.12);
+      --badge-border: rgba(234, 101, 6, 0.3);
+      --callout-bg: rgba(16, 185, 129, 0.08);
+      --callout-border: rgba(16, 185, 129, 0.25);
+      --table-stripe: rgba(255, 255, 255, 0.02);
+    }
+
+    [data-theme="light"] {
+      --bg-main: #FBFBFA;
+      --bg-surface: #FFFFFF;
+      --bg-card: rgba(255, 255, 255, 0.9);
+      --bg-card-hover: rgba(241, 245, 249, 0.95);
+      --border-color: rgba(0, 0, 0, 0.08);
+      --border-glow: rgba(234, 101, 6, 0.3);
+      --text-main: #0F172A;
+      --text-muted: #475569;
+      --text-subtle: #94A3B8;
+      --nav-bg: rgba(251, 251, 250, 0.9);
+      --badge-bg: rgba(234, 101, 6, 0.08);
+      --badge-border: rgba(234, 101, 6, 0.25);
+      --callout-bg: rgba(16, 185, 129, 0.06);
+      --callout-border: rgba(16, 185, 129, 0.2);
+      --table-stripe: rgba(0, 0, 0, 0.02);
+    }
+
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      font-size: 16px;
+    }
+
+    body {
+      font-family: var(--font-body);
+      background-color: var(--bg-main);
+      color: var(--text-main);
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+      overflow-x: hidden;
+      position: relative;
+    }
+
+    body::before {
+      content: '';
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-image: 
+        radial-gradient(circle at 50% 0%, rgba(234, 101, 6, 0.08) 0%, transparent 50%),
+        radial-gradient(circle at 90% 80%, rgba(99, 102, 241, 0.05) 0%, transparent 40%);
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    a {
+      color: var(--primary);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+
+    a:hover {
+      color: var(--primary-hover);
+    }
+
+    .container {
+      width: 100%;
+      max-width: 1240px;
+      margin: 0 auto;
+      padding: 0 24px;
+      position: relative;
+      z-index: 1;
+    }
+
+    /* -------------------------------------------------------------------------- */
+    /* Header & Navigation                                                        */
+    /* -------------------------------------------------------------------------- */
+    .header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 1000;
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      background: var(--nav-bg);
+      border-bottom: 1px solid var(--border-color);
+      transition: all 0.3s ease;
+    }
+
+    .header-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 72px;
+    }
+
+    .brand-logo {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-family: var(--font-heading);
+      font-weight: 800;
+      font-size: 1.35rem;
+      color: var(--text-main);
+      text-decoration: none;
+    }
+
+    .brand-logo:hover {
+      text-decoration: none;
+    }
+
+    .brand-mark {
+      width: 40px;
+      height: 40px;
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(135deg, var(--primary) 0%, var(--accent-coral) 100%);
+      box-shadow: 0 6px 16px var(--primary-glow);
+      color: #FFFFFF;
+      overflow: hidden;
+      flex-shrink: 0;
+    }
+
+    .brand-mark svg {
+      width: 22px;
+      height: 22px;
+      fill: none;
+      stroke: currentColor;
+      stroke-width: 2;
+    }
+
+    .nav-menu {
+      display: flex;
+      align-items: center;
+      gap: 30px;
+      list-style: none;
+    }
+
+    .nav-link {
+      font-size: 0.95rem;
+      font-weight: 600;
+      color: var(--text-muted);
+      transition: color 0.2s ease;
+    }
+
+    .nav-link:hover, .nav-link.active {
+      color: var(--text-main);
+    }
+
+    .nav-actions {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+
+    .theme-toggle-btn {
+      width: 42px;
+      height: 42px;
+      border-radius: 12px;
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      color: var(--text-main);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      transition: all 0.25s ease;
+    }
+
+    .theme-toggle-btn:hover {
+      border-color: var(--primary);
+      transform: translateY(-1px);
+    }
+
+    .btn-primary {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      padding: 9px 18px;
+      background: linear-gradient(135deg, var(--primary) 0%, var(--accent-coral) 100%);
+      color: #FFFFFF;
+      font-weight: 700;
+      font-size: 0.88rem;
+      border-radius: 12px;
+      box-shadow: 0 6px 20px var(--primary-glow);
+      transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+      text-decoration: none;
+    }
+
+    .btn-primary:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 10px 28px rgba(234, 101, 6, 0.4);
+      color: #FFFFFF;
+      text-decoration: none;
+    }
+
+    /* -------------------------------------------------------------------------- */
+    /* Content Layout                                                             */
+    /* -------------------------------------------------------------------------- */
+    .policy-wrapper {
+      padding-top: 130px;
+      padding-bottom: 90px;
+    }
+
+    .policy-card-container {
+      max-width: 960px;
+      margin: 0 auto;
+    }
+
+    .policy-header {
+      margin-bottom: 40px;
+      padding-bottom: 28px;
+      border-bottom: 1px solid var(--border-color);
+    }
+
+    .policy-title {
+      font-family: var(--font-heading);
+      font-size: 2.8rem;
+      font-weight: 900;
+      letter-spacing: -0.02em;
+      margin-bottom: 12px;
+    }
+
+    .policy-meta {
+      font-size: 0.95rem;
+      color: var(--text-muted);
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .key-callout-box {
+      background: var(--callout-bg);
+      border: 1px solid var(--callout-border);
+      border-radius: 20px;
+      padding: 24px;
+      margin: 28px 0;
+      display: flex;
+      gap: 16px;
+      align-items: flex-start;
+    }
+
+    .callout-icon {
+      font-size: 1.5rem;
+      line-height: 1;
+    }
+
+    .policy-body {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: 28px;
+      padding: 44px;
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+    }
+
+    .policy-section {
+      margin-bottom: 42px;
+    }
+
+    .policy-section:last-child {
+      margin-bottom: 0;
+    }
+
+    .policy-section h2 {
+      font-family: var(--font-heading);
+      font-size: 1.65rem;
+      font-weight: 800;
+      color: var(--text-main);
+      margin-bottom: 16px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid var(--border-color);
+    }
+
+    .policy-section h3 {
+      font-family: var(--font-heading);
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: var(--text-main);
+      margin: 24px 0 12px;
+    }
+
+    .policy-section p {
+      color: var(--text-muted);
+      font-size: 1rem;
+      margin-bottom: 16px;
+    }
+
+    .policy-section ul {
+      margin: 12px 0 20px 24px;
+      color: var(--text-muted);
+    }
+
+    .policy-section li {
+      margin-bottom: 10px;
+      line-height: 1.65;
+    }
+
+    .policy-section strong {
+      color: var(--text-main);
+    }
+
+    .code-pill {
+      font-family: var(--font-mono);
+      font-size: 0.85rem;
+      padding: 2px 8px;
+      background: var(--bg-surface);
+      border: 1px solid var(--border-color);
+      border-radius: 6px;
+      color: var(--primary);
+    }
+
+    /* Table styling */
+    .table-container {
+      width: 100%;
+      overflow-x: auto;
+      margin: 20px 0;
+      border-radius: 12px;
+      border: 1px solid var(--border-color);
+    }
+
+    .policy-table {
+      width: 100%;
+      border-collapse: collapse;
+      text-align: left;
+      font-size: 0.92rem;
+    }
+
+    .policy-table th {
+      background: var(--bg-surface);
+      color: var(--text-main);
+      font-family: var(--font-heading);
+      font-weight: 700;
+      padding: 14px 18px;
+      border-bottom: 1px solid var(--border-color);
+    }
+
+    .policy-table td {
+      padding: 14px 18px;
+      border-bottom: 1px solid var(--border-color);
+      color: var(--text-muted);
+      vertical-align: top;
+    }
+
+    .policy-table tr:nth-child(even) td {
+      background: var(--table-stripe);
+    }
+
+    .policy-table tr:last-child td {
+      border-bottom: none;
+    }
+
+    /* -------------------------------------------------------------------------- */
+    /* Footer                                                                     */
+    /* -------------------------------------------------------------------------- */
+    .footer {
+      background: var(--bg-surface);
+      border-top: 1px solid var(--border-color);
+      padding: 60px 0 32px;
+      margin-top: 80px;
+    }
+
+    .footer-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 48px;
+      margin-bottom: 48px;
+      flex-wrap: wrap;
+    }
+
+    .footer-brand {
+      max-width: 360px;
+    }
+
+    .footer-brand p {
+      color: var(--text-muted);
+      font-size: 0.95rem;
+      margin: 16px 0 16px;
+      line-height: 1.6;
+    }
+
+    .footer-contact {
+      font-size: 0.88rem;
+      color: var(--text-subtle);
+    }
+
+    .footer-contact a {
+      color: var(--primary);
+      font-weight: 600;
+    }
+
+    .footer-nav-groups {
+      display: flex;
+      gap: 64px;
+      flex-wrap: wrap;
+    }
+
+    .footer-col h5 {
+      font-family: var(--font-heading);
+      font-size: 0.95rem;
+      font-weight: 800;
+      margin-bottom: 16px;
+      color: var(--text-main);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    .footer-links {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .footer-links a {
+      color: var(--text-muted);
+      font-size: 0.9rem;
+      transition: color 0.2s;
+    }
+
+    .footer-links a:hover {
+      color: var(--primary);
+    }
+
+    .footer-bottom {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding-top: 28px;
+      border-top: 1px solid var(--border-color);
+      font-size: 0.85rem;
+      color: var(--text-subtle);
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+
+    .footer-bottom-links {
+      display: flex;
+      gap: 24px;
+    }
+
+    .footer-bottom-links a {
+      color: var(--text-subtle);
+      transition: color 0.2s;
+    }
+
+    .footer-bottom-links a:hover {
+      color: var(--primary);
+    }
+
+    @media (max-width: 768px) {
+      .nav-menu {
+        display: none;
+      }
+      .policy-title {
+        font-size: 2.1rem;
+      }
+      .policy-body {
+        padding: 24px;
+      }
+      .footer-top {
+        flex-direction: column;
+        gap: 36px;
+      }
+      .footer-nav-groups {
+        gap: 40px;
+        width: 100%;
+        justify-content: space-between;
+      }
+      .footer-bottom {
+        flex-direction: column;
+        gap: 14px;
+        text-align: center;
+      }
+      .footer-bottom-links {
+        justify-content: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+      <div class="header-inner">
+        <a href="#top" class="brand-logo">
+          <div class="brand-mark">
+            <svg viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="3" y="3" width="18" height="18" rx="3" ry="3"/>
+              <circle cx="8.5" cy="8.5" r="1.5"/>
+              <polyline points="21 15 16 10 5 21"/>
+            </svg>
+          </div>
+          <div>
+            <span>Bulk Image</span>
+          </div>
+        </a>
+
+        <nav>
+          <ul class="nav-menu">
+            <li><a href="#top" class="nav-link active" style="color: var(--primary);">Privacy Policy</a></li>
+            <li><a href="#principles" class="nav-link">Key Principles</a></li>
+            <li><a href="#permissions" class="nav-link">Permissions</a></li>
+            <li><a href="#storage" class="nav-link">Data Security</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
+          </ul>
+        </nav>
+
+        <div class="nav-actions">
+          <button class="theme-toggle-btn" id="themeToggleBtn" aria-label="Toggle theme">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" id="themeIcon">
+              <circle cx="12" cy="12" r="5"/>
+              <line x1="12" y1="1" x2="12" y2="3"/>
+              <line x1="12" y1="21" x2="12" y2="23"/>
+              <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/>
+              <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
+              <line x1="1" y1="12" x2="3" y2="12"/>
+              <line x1="21" y1="12" x2="23" y2="12"/>
+              <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/>
+              <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+            </svg>
+          </button>
+          <a href="https://play.google.com/store/apps/details?id=com.widgettree.bulkimage" target="_blank" rel="noopener noreferrer" class="btn-primary">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M3.609 1.814L13.792 12 3.61 22.186c-.37-.367-.61-.88-.61-1.458V3.272c0-.577.24-1.09.61-1.458zm11.24 11.24l2.483-2.483-11.89-6.84 9.407 9.323zm0 1.892l-9.407 9.323 11.89-6.84-2.483-2.483zm1.488-1.488l3.65-2.098c1.02-.586 1.02-1.542 0-2.128l-3.65-2.098-2.122 2.122 2.122 2.122z"/>
+            </svg>
+            <span>Google Play</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Content -->
+  <main class="policy-wrapper" id="top">
+    <div class="container">
+      <div class="policy-card-container">
+        <div class="policy-header">
+          <h1 class="policy-title">Privacy Policy</h1>
+          <div class="policy-meta">
+            <span><strong>Effective Date:</strong> October 19, 2026</span>
+            <span><strong>Publisher:</strong> WidgetTree</span>
+            <span><strong>Application ID:</strong> <span class="code-pill">com.widgettree.bulkimage</span></span>
+            <span><strong>Contact:</strong> <a href="mailto:widgettree.dev@gmail.com">widgettree.dev@gmail.com</a></span>
+          </div>
+        </div>
+
+        <div class="policy-body">
+          <p>Welcome to <strong>Bulk Image</strong> (&ldquo;we,&rdquo; &ldquo;our,&rdquo; or &ldquo;us&rdquo;), published by <strong>WidgetTree</strong>. We respect your privacy and are committed to protecting your data. This Privacy Policy explains our practices regarding your information when you use the Bulk Image mobile application (the &ldquo;App&rdquo;).</p>
+          <p>Bulk Image is a <strong>local-first batch graphics, certificate, and personalized image generation utility</strong>. We believe in absolute user data sovereignty: our app operates completely offline and on-device. We do not host cloud databases, user tracking servers, or analytics backends. Your templates, imported spreadsheet records, photos, signatures, and exported assets remain strictly on your physical device.</p>
+
+          <div class="key-callout-box">
+            <div class="callout-icon">🔒</div>
+            <div>
+              <strong style="color: var(--accent-emerald); font-size: 1.05rem;">100% Local-First Architecture</strong>
+              <p style="margin: 4px 0 0; font-size: 0.95rem;">Bulk Image does not run cloud databases, user registration systems, advertising networks, or background telemetry. Your designs, spreadsheets, and generated files belong solely to you.</p>
+            </div>
+          </div>
+
+          <section class="policy-section" id="principles">
+            <h2>1. Summary of Key Principles</h2>
+            <ul>
+              <li><strong>Zero Cloud Servers:</strong> We do not operate remote databases or user authentication backends. No sign-up, email registration, or login is required to use any feature in the App.</li>
+              <li><strong>On-Device Processing:</strong> All spreadsheet parsing (CSV, TSV, XLSX), template variable substitution, canvas editing, and image/PDF rasterization execute locally in your device's memory isolate.</li>
+              <li><strong>Zero Behavioral Tracking:</strong> We do not track your project names, recipient lists, personal data, device identifiers, or app usage habits. No analytics SDKs or advertising SDKs are embedded in the App.</li>
+              <li><strong>Explicit User Permissions:</strong> Device hardware (such as the camera) is accessed only when you deliberately initiate an action (e.g., tapping "Camera" to take a photo of a template). We never access hardware or files silently in the background.</li>
+              <li><strong>Scoped File Access:</strong> The App uses standard OS system pickers (Android Photo Picker and Storage Access Framework / iOS Document Picker) to access only the specific files and images you select. Broad storage access is never requested.</li>
+            </ul>
+          </section>
+
+          <section class="policy-section" id="permissions">
+            <h2>2. Information We Access and How We Use It</h2>
+            <p>Bulk Image processes only the data necessary to provide its core batch design and generation functions:</p>
+
+            <h3>A. Camera Permission (Optional)</h3>
+            <ul>
+              <li><strong>Permission:</strong> <span class="code-pill">android.permission.CAMERA</span> / <span class="code-pill">NSCameraUsageDescription</span></li>
+              <li><strong>Purpose:</strong> To allow you to take a live photo of a paper certificate, design document, signature, or custom artwork to use as a background or layer inside your project.</li>
+              <li><strong>Behavior:</strong> The permission is requested only at the exact moment you tap the &ldquo;Camera&rdquo; option. It is never requested upon application launch. If denied, the App remains fully functional using Gallery and Files options.</li>
+              <li><strong>Data Flow:</strong> Captured photos are saved locally to your device's sandboxed project storage. They are never transmitted, uploaded, or exposed to any remote server or external party.</li>
+            </ul>
+
+            <h3>B. Photo Library & Gallery Access</h3>
+            <ul>
+              <li><strong>Permission / API:</strong> Android Native Photo Picker / <span class="code-pill">NSPhotoLibraryUsageDescription</span></li>
+              <li><strong>Purpose:</strong> To allow you to select background templates, logos, badges, signatures, or artwork from your device's photo library.</li>
+              <li><strong>Behavior:</strong> The App utilizes the modern, secure OS Photo Picker. It receives read-only access solely to the specific photos you select. The App does <em>not</em> request broad media library or storage permissions (<span class="code-pill">READ_EXTERNAL_STORAGE</span> / <span class="code-pill">READ_MEDIA_IMAGES</span> are not declared or used).</li>
+              <li><strong>Data Flow:</strong> Selected images are copied locally into your private project folder on your device. None of your photos are ever uploaded or transmitted anywhere.</li>
+            </ul>
+
+            <h3>C. Spreadsheets & Data Files (CSV, TSV, XLSX)</h3>
+            <ul>
+              <li><strong>Mechanism:</strong> System File Picker (<span class="code-pill">ACTION_OPEN_DOCUMENT</span> / <span class="code-pill">UIDocumentPickerViewController</span>)</li>
+              <li><strong>Purpose:</strong> To read spreadsheet columns and rows (e.g., names, dates, course titles, ID numbers) so that you can dynamically bind them into your design layers using template tags like <span class="code-pill">{Name}</span> or <span class="code-pill">{Date}</span>.</li>
+              <li><strong>Behavior:</strong> You explicitly browse and pick your spreadsheet file. The App parses the workbook in a local background isolate directly on your device.</li>
+              <li><strong>Data Flow:</strong> Your spreadsheet contents (including any sensitive recipient or customer data) never leave your device. We do not inspect, log, or upload your spreadsheet rows.</li>
+            </ul>
+
+            <h3>D. Project Designs & Exported Documents</h3>
+            <ul>
+              <li><strong>Project Files:</strong> Saved project metadata (layer positions, font styles, colors, crops, undo history) is stored locally in the App's private application storage sandbox.</li>
+              <li><strong>Generated Output:</strong> When you tap &ldquo;Export&rdquo;, the App renders your designs into high-resolution PNG, JPG, or PDF files, or packages them into a ZIP archive. These files are saved locally on your device or passed to the standard operating system share sheet (<span class="code-pill">ACTION_SEND</span>) at your direction.</li>
+              <li><strong>Data Flow:</strong> We have no access to your rendered certificates, generated images, or ZIP archives.</li>
+            </ul>
+
+            <div class="table-container">
+              <table class="policy-table">
+                <thead>
+                  <tr>
+                    <th>Permission / Feature</th>
+                    <th>Required / Optional</th>
+                    <th>Primary Purpose</th>
+                    <th>Where Data Is Processed</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><strong>Camera</strong></td>
+                    <td>Optional (Runtime prompt)</td>
+                    <td>Capture master templates, logos, or paper signatures</td>
+                    <td>100% On-Device (Local sandboxed storage)</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Photo Picker</strong></td>
+                    <td>Optional (Scoped picker)</td>
+                    <td>Select background designs & artwork layers</td>
+                    <td>100% On-Device (User-selected files only)</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Spreadsheets (CSV/XLSX)</strong></td>
+                    <td>Optional (System picker)</td>
+                    <td>Map variables for batch personalization</td>
+                    <td>100% On-Device (Memory isolate parsing)</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Share / Export</strong></td>
+                    <td>User-Initiated</td>
+                    <td>Save or send generated PNG, JPG, PDF, or ZIP</td>
+                    <td>Standard OS Share Sheet / Local storage</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </section>
+
+          <section class="policy-section" id="storage">
+            <h2>3. Data Storage and Security</h2>
+            <p>Security and confidentiality are inherent to Bulk Image because our architecture eliminates server-side vulnerabilities:</p>
+            <ul>
+              <li><strong>Operating System Sandboxing:</strong> All project data, cached assets, and drafts are stored in private internal directories governed by iOS and Android sandbox security. Other apps cannot read your project files.</li>
+              <li><strong>Zero Network Transmission:</strong> The application does not communicate with any external backend to send your project data, spreadsheet contents, or images.</li>
+              <li><strong>No Third-Party SDK Trackers:</strong> We do not include third-party marketing SDKs, social media plugins, crash reporting telemetries with personal data, or ad trackers.</li>
+            </ul>
+          </section>
+
+          <section class="policy-section">
+            <h2>4. Sharing of Information</h2>
+            <p><strong>We do not sell, rent, monetize, or disclose your personal or project data to third parties.</strong></p>
+            <p>Because we do not store or process your data on servers, your data is never transferred to advertisers, brokers, or data aggregators. When you share a generated batch of images or a ZIP archive, you are using your device&rsquo;s native sharing mechanism (e.g., emailing a file, saving to Google Drive, or messaging a colleague) under your explicit direction and control.</p>
+          </section>
+
+          <section class="policy-section">
+            <h2>5. User Control and Data Deletion</h2>
+            <p>You maintain complete control over all data created with Bulk Image:</p>
+            <ul>
+              <li><strong>Deleting Projects:</strong> You can delete any individual project, reset data sheets, or empty the trash directly from the dashboard within the App.</li>
+              <li><strong>Purging App Data:</strong> You can remove all project data, cached fonts, and settings at any time by selecting <em>Clear Storage / Clear Data</em> in your device&rsquo;s system settings.</li>
+              <li><strong>Uninstalling:</strong> Uninstalling Bulk Image automatically removes the App&rsquo;s private internal sandbox and all locally saved project files from your device.</li>
+            </ul>
+          </section>
+
+          <section class="policy-section">
+            <h2>6. Children&rsquo;s Privacy</h2>
+            <p>Bulk Image is a general-audience productivity application and is not directed at children under the age of 13. We do not knowingly collect or solicit personal information from children. Because all features operate strictly on-device without data collection or user accounts, parents and educators can use the App with full confidence in student data privacy.</p>
+          </section>
+
+          <section class="policy-section">
+            <h2>7. Changes to this Privacy Policy</h2>
+            <p>We may update this Privacy Policy from time to time to reflect modifications in our features or changes to applicable legal or platform guidelines. If updates are made, the revised policy will be posted on this page with an updated &ldquo;Effective Date.&rdquo; We encourage you to review this Privacy Policy periodically.</p>
+          </section>
+
+          <section class="policy-section" id="contact">
+            <h2>8. Contact Us</h2>
+            <p>If you have questions, feedback, or concerns regarding this Privacy Policy or the security practices of Bulk Image, please contact us at:</p>
+            <p>
+              <strong>Publisher:</strong> WidgetTree<br>
+              <strong>Application:</strong> Bulk Image (<span class="code-pill">com.widgettree.bulkimage</span>)<br>
+              <strong>Email:</strong> <a href="mailto:widgettree.dev@gmail.com">widgettree.dev@gmail.com</a>
+            </p>
+          </section>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+
+        <div class="footer-brand">
+          <a href="#top" class="brand-logo">
+            <div class="brand-mark">
+              <svg viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="3" y="3" width="18" height="18" rx="3" ry="3"/>
+                <circle cx="8.5" cy="8.5" r="1.5"/>
+                <polyline points="21 15 16 10 5 21"/>
+              </svg>
+            </div>
+            <span>Bulk Image</span>
+          </a>
+          <p>
+            A local-first batch certificate and image personalization tool published by <strong>WidgetTree</strong>. 100% on-device data sovereignty.
+          </p>
+          <div class="footer-contact">
+            Contact: <a href="mailto:widgettree.dev@gmail.com">widgettree.dev@gmail.com</a>
+          </div>
+        </div>
+
+        <div class="footer-nav-groups">
+          <div class="footer-col">
+            <h5>Product</h5>
+            <ul class="footer-links">
+              <li><a href="#top">Privacy Policy</a></li>
+              <li><a href="#principles">Key Principles</a></li>
+              <li><a href="#permissions">Permissions & Hardware</a></li>
+              <li><a href="#storage">Data Security</a></li>
+              <li><a href="https://play.google.com/store/apps/details?id=com.widgettree.bulkimage" target="_blank" rel="noopener noreferrer">Get on Google Play</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h5>Legal & Publisher</h5>
+            <ul class="footer-links">
+              <li><a href="#top" style="color: var(--primary);">Privacy Policy</a></li>
+              <li><a href="mailto:widgettree.dev@gmail.com">Contact Publisher (WidgetTree)</a></li>
+              <li><a href="https://play.google.com/store/apps/developer?id=WidgetTree" target="_blank" rel="noopener noreferrer">More by WidgetTree</a></li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          &copy; 2026 <strong>WidgetTree</strong>. All rights reserved.
+        </div>
+        <div class="footer-bottom-links">
+          <a href="#top" style="color: var(--primary);">Privacy Policy</a>
+          <a href="mailto:widgettree.dev@gmail.com">Support</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const themeToggleBtn = document.getElementById('themeToggleBtn');
+    const themeIcon = document.getElementById('themeIcon');
+    let currentTheme = localStorage.getItem('bulkimage_theme') || 'dark';
+
+    function applyTheme(theme) {
+      document.documentElement.setAttribute('data-theme', theme);
+      localStorage.setItem('bulkimage_theme', theme);
+      currentTheme = theme;
+      if (theme === 'light') {
+        themeIcon.innerHTML = `<path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>`;
+      } else {
+        themeIcon.innerHTML = `
+          <circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+        `;
+      }
+    }
+    applyTheme(currentTheme);
+    themeToggleBtn.addEventListener('click', () => {
+      applyTheme(currentTheme === 'dark' ? 'light' : 'dark');
+    });
+  </script>
+</body>
+</html>
